@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock, Stopwatch, and Timer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Clock, Stopwatch, and Timer</h1>
+
+        <!-- Clock and Date -->
+        <div class="clock">
+            <h2>Date and Time</h2>
+            <p id="currentDate"></p>
+            <p id="currentTime"></p>
+        </div>
+
+        <!-- Stopwatch -->
+        <div class="timer">
+            <h2>Stopwatch</h2>
+            <p id="stopwatch">00:00:00.000</p>
+            <button onclick="startStopwatch()">Start</button>
+            <button onclick="pauseStopwatch()">Pause</button>
+            <button onclick="resetStopwatch()">Reset</button>
+        </div>
+
+        <!-- Timer -->
+        <div class="countdown">
+            <h2>Countdown Timer</h2>
+            <input type="number" id="timerMinutes" placeholder="Minutes">
+            <input type="number" id="timerSeconds" placeholder="Seconds">
+            <button onclick="startTimer()">Start</button>
+            <button onclick="pauseTimer()">Pause</button>
+            <button onclick="resetTimer()">Reset</button>
+            <p id="timer">00:00.000</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
